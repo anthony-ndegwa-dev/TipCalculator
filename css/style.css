@@ -150,6 +150,7 @@ button:active {
   border: 3px solid var(--secondColor);
   outline: none;
   background: #004;
+  color: #fff;
 }
 .peopleAmt {
   padding: 10px;
