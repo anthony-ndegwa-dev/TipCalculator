@@ -1,0 +1,159 @@
+:root{
+  --mainColor: repeating-linear-gradient(45deg, #f99, #ccf 60px, #cff 60px, #9cf 300px);
+  --secondColor: rgb(62, 36, 235);
+  --thirdColor: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("restaurant.jpg");
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.container {
+  height: 100%;
+  width: 400px;
+  background: var(--thirdColor);
+  border-radius: 20px;
+}
+
+@media(max-width: 600px){
+  .container {
+    height: 100%;
+    width: 95%;
+    background: var(--thirdColor);
+    border-radius: 20px;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.2rem;
+  background: rgb(62, 36, 235);
+  color: var(--thirdColor);
+  padding: 30px 0;
+  text-transform: uppercase;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0;
+}
+/* Typewriter effect */
+.typewriter-effect {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.typewriter-effect > .text {
+  max-width: 0;
+  animation: typing 3s steps(var(--characters)) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter-effect:after {
+  content: " |";
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
+}
+
+@keyframes typing {
+  75%,
+  100% {
+    max-width: calc(var(--characters) * 1ch);
+  }
+}
+
+@keyframes blink {
+  0%,
+  75%,
+  100% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+}
+
+p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #004;
+}
+
+#totalTip {
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+#totalTip sup{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.billAmountInput {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+}
+
+.peopleAmtInput {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: block;
+  background: var(--secondColor);
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  margin: 30px auto;
+  font-size: 1.2rem;
+  color: var(--thirdColor);
+}
+button:hover {
+  background: var(--mainColor);
+  border-bottom-color: #000; 
+  color: #000;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+.billAmt {
+  padding: 10px;
+}
+.billAmt:focus{
+  border: 3px solid var(--secondColor);
+  outline: none;
+}
+
+#serviceSelector {
+  padding: 10px;
+}
+#serviceSelector:focus {
+  border: 3px solid var(--secondColor);
+  outline: none;
+}
+.peopleAmt {
+  padding: 10px;
+}
+.peopleAmt:focus {
+  border: 3px solid var(--secondColor);
+  outline: none;
+}
