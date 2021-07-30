@@ -149,6 +149,7 @@ button:active {
 #serviceSelector:focus {
   border: 3px solid var(--secondColor);
   outline: none;
+  background: #004;
 }
 .peopleAmt {
   padding: 10px;
