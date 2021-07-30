@@ -21,7 +21,7 @@ body {
   width: 400px;
   background: var(--thirdColor);
   border-radius: 20px;
-  border: 3px solid #004;
+  border: 3px solid rgb(62, 36, 235);
 }
 
 @media(max-width: 600px){
