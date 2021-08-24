@@ -58,7 +58,6 @@ h1 {
   animation: blink 1s infinite;
   animation-timing-function: step-end;
 }
-
 @keyframes typing {
   75%,
   100% {
