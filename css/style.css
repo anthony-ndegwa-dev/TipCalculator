@@ -64,7 +64,6 @@ h1 {
     max-width: calc(var(--characters) * 1ch);
   }
 }
-
 @keyframes blink {
   0%,
   75%,
